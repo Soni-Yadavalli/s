@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+}
+.wishes{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(f2.jpg);;
+    background-position: left;
+    background-size: cover;
+    position: relative;
+}
+.container{
+    width:90%;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.container h1{
+    font-size:100px;
+}
+/* Keep text above hearts */
+.content {
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+/* Hearts container */
+.hearts {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Individual hearts */
+.hearts span {
+  position: absolute;
+  color: red;
+  font-size: 30px;
+  animation: float 6s linear infinite;
+}
+
+/* Random positions */
+.hearts span:nth-child(1) { left: 10%; animation-duration: 5s; }
+.hearts span:nth-child(2) { left: 30%; animation-duration: 7s; }
+.hearts span:nth-child(3) { left: 50%; animation-duration: 6s; }
+.hearts span:nth-child(4) { left: 70%; animation-duration: 8s; }
+.hearts span:nth-child(5) { left: 90%; animation-duration: 5s; }
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+.hero-btn :hover{
+    border: 1px solid #f44336;
+    background:#f44336 ;
+    transition: 1s;
+
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+}
+.poem-page{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(f2.jpg);
+    background-position: left;
+    background-size: cover;
+    position: relative;
+}
+.header{
+    width:90%;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.header h1{
+    font-size:10px;
+    font-family: Arial, sans-serif;
+}
+.header p{
+    font-size:10px;
+    font-family: Arial, sans-serif;
+}
+
+.message-page{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(f5.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.head{
+    width:90%;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.head h1{
+    font-size:9px;
+    font-family: Arial, sans-serif;
+}
+
+   
